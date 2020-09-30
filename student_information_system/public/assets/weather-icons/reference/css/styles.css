@@ -1,0 +1,876 @@
+
+/*!
+ *  Weather Icons Beta 1
+ *  Weather themed icons for Bootstrap
+ *  ------------------------------------------------------------------------------
+  * Maintained at http://erikflowers.github.io/weather-icons
+ *  http://twitter.com/Erik_UX
+ *
+ *  License
+ *  ------------------------------------------------------------------------------
+ *  - Fpmt licensed under SIL OFL 1.1 -
+ *    http://scripts.sil.org/OFL
+ *  - CSS and LESS are licensed under MIT License -
+ *    http://opensource.org/licenses/mit-license.html
+ *  - Documentation licensed under CC BY 3.0 -
+ *    http://creativecommons.org/licenses/by/3.0/
+ *  - Inspired by and works great as a companion with Font Aweosme
+ *    "Font Awesome by Dave Gandy - http://fontawesome.io"
+ *
+ *  Weather Icons Bootstrap Package Author - Erik Flowers - erik@helloerik.com
+ *  ------------------------------------------------------------------------------
+ *  Email: erik@helloerik.com
+ *  Twitter: http://twitter.com/Erik_UX
+ */
+@font-face {
+  font-family: 'weather';
+  src: url('../font/weathericons-regular-webfont.eot');
+  src: url('../font/weathericons-regular-webfont.eot?#iefix') format('embedded-opentype'), url('../font/weathericons-regular-webfont.woff') format('woff'), url('../font/weathericons-regular-webfont.ttf') format('truetype'), url('../font/weathericons-regular-webfont.svg#weathericons-regular-webfontRg') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+[class^="wi-"],
+[class*=" wi-"] {
+  font-family: weather;
+  font-weight: normal;
+  font-style: normal;
+  text-decoration: inherit;
+  text-transform: none;
+  -webkit-font-smoothing: antialiased;
+  *margin-right: .3em;
+}
+[class^="wi-"]:before,
+[class*=" wi-"]:before {
+  text-decoration: inherit;
+  display: inline-block;
+  speak: none;
+}
+.wi-day-cloudy-gusts:before {
+  content: "\f000";
+}
+.wi-day-cloudy-windy:before {
+  content: "\f001";
+}
+.wi-day-cloudy:before {
+  content: "\f002";
+}
+.wi-day-fog:before {
+  content: "\f003";
+}
+.wi-day-hail:before {
+  content: "\f004";
+}
+.wi-day-lightning:before {
+  content: "\f005";
+}
+.wi-day-rain-mix:before {
+  content: "\f006";
+}
+.wi-day-rain-wind:before {
+  content: "\f007";
+}
+.wi-day-rain:before {
+  content: "\f008";
+}
+.wi-day-showers:before {
+  content: "\f009";
+}
+.wi-day-snow:before {
+  content: "\f00a";
+}
+.wi-day-sprinkle:before {
+  content: "\f00b";
+}
+.wi-day-sunny-overcast:before {
+  content: "\f00c";
+}
+.wi-day-sunny:before {
+  content: "\f00d";
+}
+.wi-day-storm-showers:before {
+  content: "\f00e";
+}
+.wi-day-thunderstorm:before {
+  content: "\f010";
+}
+.wi-cloudy-gusts:before {
+  content: "\f011";
+}
+.wi-cloudy-windy:before {
+  content: "\f012";
+}
+.wi-cloudy:before {
+  content: "\f013";
+}
+.wi-fog:before {
+  content: "\f014";
+}
+.wi-hail:before {
+  content: "\f015";
+}
+.wi-lightning:before {
+  content: "\f016";
+}
+.wi-rain-mix:before {
+  content: "\f017";
+}
+.wi-rain-wind:before {
+  content: "\f018";
+}
+.wi-rain:before {
+  content: "\f019";
+}
+.wi-showers:before {
+  content: "\f01a";
+}
+.wi-snow:before {
+  content: "\f01b";
+}
+.wi-sprinkle:before {
+  content: "\f01c";
+}
+.wi-storm-showers:before {
+  content: "\f01d";
+}
+.wi-thunderstorm:before {
+  content: "\f01e";
+}
+.wi-windy:before {
+  content: "\f021";
+}
+.wi-night-alt-cloudy-gusts:before {
+  content: "\f022";
+}
+.wi-night-alt-cloudy-windy:before {
+  content: "\f023";
+}
+.wi-night-alt-hail:before {
+  content: "\f024";
+}
+.wi-night-alt-lightning:before {
+  content: "\f025";
+}
+.wi-night-alt-rain-mix:before {
+  content: "\f026";
+}
+.wi-night-alt-rain-wind:before {
+  content: "\f027";
+}
+.wi-night-alt-rain:before {
+  content: "\f028";
+}
+.wi-night-alt-showers:before {
+  content: "\f029";
+}
+.wi-night-alt-snow:before {
+  content: "\f02a";
+}
+.wi-night-alt-sprinkle:before {
+  content: "\f02b";
+}
+.wi-night-alt-storm-showers:before {
+  content: "\f02c";
+}
+.wi-night-alt-thunderstorm:before {
+  content: "\f02d";
+}
+.wi-night-clear:before {
+  content: "\f02e";
+}
+.wi-night-cloudy-gusts:before {
+  content: "\f02f";
+}
+.wi-night-cloudy-windy:before {
+  content: "\f030";
+}
+.wi-night-cloudy:before {
+  content: "\f031";
+}
+.wi-night-hail:before {
+  content: "\f032";
+}
+.wi-night-lightning:before {
+  content: "\f033";
+}
+.wi-night-rain-mix:before {
+  content: "\f034";
+}
+.wi-night-rain-wind:before {
+  content: "\f035";
+}
+.wi-night-rain:before {
+  content: "\f036";
+}
+.wi-night-showers:before {
+  content: "\f037";
+}
+.wi-night-snow:before {
+  content: "\f038";
+}
+.wi-night-sprinkle:before {
+  content: "\f039";
+}
+.wi-night-storm-showers:before {
+  content: "\f03a";
+}
+.wi-night-thunderstorm:before {
+  content: "\f03b";
+}
+.wi-celcius:before {
+  content: "\f03c";
+}
+.wi-cloud-down:before {
+  content: "\f03d";
+}
+.wi-cloud-refresh:before {
+  content: "\f03e";
+}
+.wi-cloud-up:before {
+  content: "\f040";
+}
+.wi-cloud:before {
+  content: "\f041";
+}
+.wi-degrees:before {
+  content: "\f042";
+}
+.wi-down-left:before {
+  content: "\f043";
+}
+.wi-down:before {
+  content: "\f044";
+}
+.wi-fahrenheit:before {
+  content: "\f045";
+}
+.wi-horizon-alt:before {
+  content: "\f046";
+}
+.wi-horizon:before {
+  content: "\f047";
+}
+.wi-left:before {
+  content: "\f048";
+}
+.wi-lightning:before {
+  content: "\f016";
+}
+.wi-night-fog:before {
+  content: "\f04a";
+}
+.wi-refresh-alt:before {
+  content: "\f04b";
+}
+.wi-refresh:before {
+  content: "\f04c";
+}
+.wi-right:before {
+  content: "\f04d";
+}
+.wi-sprinkles:before {
+  content: "\f04e";
+}
+.wi-strong-wind:before {
+  content: "\f050";
+}
+.wi-sunrise:before {
+  content: "\f051";
+}
+.wi-sunset:before {
+  content: "\f052";
+}
+.wi-thermometer-exterior:before {
+  content: "\f053";
+}
+.wi-thermometer-internal:before {
+  content: "\f054";
+}
+.wi-thermometer:before {
+  content: "\f055";
+}
+.wi-tornado:before {
+  content: "\f056";
+}
+.wi-up-right:before {
+  content: "\f057";
+}
+.wi-up:before {
+  content: "\f058";
+}
+.wi-wind-east:before {
+  content: "\f059";
+}
+.wi-wind-north-east:before {
+  content: "\f05a";
+}
+.wi-wind-north-west:before {
+  content: "\f05b";
+}
+.wi-wind-north:before {
+  content: "\f05c";
+}
+.wi-wind-south-east:before {
+  content: "\f05d";
+}
+.wi-wind-south-west:before {
+  content: "\f05e";
+}
+.wi-wind-south:before {
+  content: "\f060";
+}
+.wi-wind-west:before {
+  content: "\f061";
+}
+::selection,
+-moz::selection {
+  background: #0a91ff;
+  color: #ffffff;
+}
+body {
+  font-family: "proxima-nova", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 300;
+  font-size: 14px;
+  color: #333333;
+}
+.reference {
+  font-family: "Helvetica", Arial, sans-serif;
+  font-size: 22px;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6 {
+  font-family: "proxima-nova", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+header {
+  position: relative;
+  height: 100px;
+  padding-top: 0px;
+  background: url("img/sky.jpg") top center no-repeat fixed;
+  border-bottom: 10px solid #404040;
+}
+@media (min-width: 768px) {
+  header {
+    height: 300px;
+  }
+}
+header h1 {
+  float: left;
+  font-family: "aktiv-grotesk-std";
+  font-weight: 200;
+  font-size: 40px;
+  margin-top: 40px;
+  margin-left: 0px;
+  color: #ffffff;
+  text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.9);
+}
+@media (min-width: 768px) {
+  header h1 {
+    font-size: 60px;
+    margin-top: 180px;
+  }
+}
+header .icon {
+  position: absolute;
+  right: 20px;
+  top: 40px;
+  color: #ffffff;
+  font-size: 55px;
+  margin-left: 100px;
+  float: left;
+  line-height: .65em;
+  text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.5);
+}
+@media (min-width: 768px) {
+  header .icon {
+    font-size: 200px;
+    top: 100px;
+  }
+}
+footer {
+  height: 200px;
+  background-color: #333333;
+  margin-top: 30px;
+  color: #ffffff;
+  padding-top: 15px;
+  font-weight: 400;
+}
+footer a {
+  color: #b3b3b3;
+}
+.buttons {
+  font-size: 100px;
+}
+.intro-icons {
+  font-size: 15px;
+  color: #357cbb;
+}
+.intro-icons i {
+  margin-right: 10px;
+}
+@media (min-width: 768px) {
+  .intro-icons {
+    font-size: 25px;
+  }
+  .intro-icons i {
+    margin-right: 10px;
+  }
+}
+@media (min-width: 992px) {
+  .intro-icons {
+    font-size: 35px;
+  }
+  .intro-icons i {
+    margin-right: 10px;
+  }
+}
+.headline {
+  font-size: 25px;
+  line-height: 1.3em;
+  margin-bottom: 30px;
+}
+.social {
+  margin-top: 15px;
+}
+.social p {
+  margin-bottom: 0px;
+  text-align: center;
+}
+.download-here {
+  margin-top: 20px;
+}
+.download {
+  display: block;
+}
+.intro {
+  font-size: 18px;
+  margin-top: 30px;
+  font-weight: 400;
+}
+.beta {
+  margin-top: 20px;
+  color: #808080;
+}
+.beta .title {
+  color: #808080;
+  font-weight: 500;
+  font-size: 20px;
+}
+.beta p {
+  font-weight: 400;
+  font-size: 15px;
+}
+.download-button {
+  position: relative;
+  float: left;
+  width: 100%;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+@media (min-width: 768px) {
+  .download-button {
+    width: 33.33333333333333%;
+  }
+}
+@media (min-width: 768px) {
+  .download-button {
+    margin-left: 33.33333333333333%;
+  }
+}
+.banner {
+  background-color: #e6e6e6;
+  background-image: url("img/large-bg2.jpg");
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-attachment: fixed;
+  height: 250px;
+}
+.banner h1 {
+  color: #ffffff;
+  font-weight: 400;
+}
+.banner a {
+  display: block;
+  text-decoration: none;
+}
+.banner .tweet .icon-circle {
+  color: #33bbff;
+}
+.banner .tweet .icon-twitter {
+  color: #ffffff;
+}
+.banner .tweet:hover .icon-circle {
+  color: #0088cc;
+}
+.banner .icon-stack {
+  display: inline-block;
+}
+.banner .tweeter {
+  display: inline-block;
+  font-weight: 700;
+  color: #ffffff;
+}
+.banner .github {
+  font-size: 25px;
+  float: left;
+}
+.banner .github .icon-circle {
+  color: #999999;
+}
+.banner .github .icon-github-alt {
+  color: #ffffff;
+}
+.module .icon {
+  text-align: center;
+  padding: 50px 20px;
+  color: #e6e6e6;
+}
+.module .title {
+  text-align: center;
+  font-size: 20px;
+  font-weight: 500;
+}
+.iconExamples:before,
+.iconExamples:after {
+  content: " ";
+  /* 1 */
+
+  display: table;
+  /* 2 */
+
+}
+.iconExamples:after {
+  clear: both;
+}
+.iconExamples:before,
+.iconExamples:after {
+  content: " ";
+  /* 1 */
+
+  display: table;
+  /* 2 */
+
+}
+.iconExamples:after {
+  clear: both;
+}
+.iconExamples h2 {
+  font-family: "aktiv-grotesk-std";
+  font-weight: 200;
+  color: #3b6ab5;
+}
+.iconExamples .example {
+  text-align: center;
+  margin: 10px 3px;
+}
+.iconExamples .example:before,
+.iconExamples .example:after {
+  content: " ";
+  /* 1 */
+
+  display: table;
+  /* 2 */
+
+}
+.iconExamples .example:after {
+  clear: both;
+}
+.iconExamples .example:before,
+.iconExamples .example:after {
+  content: " ";
+  /* 1 */
+
+  display: table;
+  /* 2 */
+
+}
+.iconExamples .example:after {
+  clear: both;
+}
+.iconExamples .example .icon {
+  font-size: 20px;
+  float: left;
+  width: 35px;
+}
+.iconExamples .example .class {
+  text-align: center;
+  font-size: 17px;
+  float: left;
+  margin-top: 0px;
+  font-weight: 400;
+  margin-left: 10px;
+  color: #333333;
+}
+.weatherseparator {
+  padding-bottom: 10px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  margin-bottom: 50px;
+}
+.weatherseparator:before,
+.weatherseparator:after {
+  content: " ";
+  /* 1 */
+
+  display: table;
+  /* 2 */
+
+}
+.weatherseparator:after {
+  clear: both;
+}
+.weatherseparator:before,
+.weatherseparator:after {
+  content: " ";
+  /* 1 */
+
+  display: table;
+  /* 2 */
+
+}
+.weatherseparator:after {
+  clear: both;
+}
+.row-fluid:before,
+.row-fluid:after {
+  content: " ";
+  /* 1 */
+
+  display: table;
+  /* 2 */
+
+}
+.row-fluid:after {
+  clear: both;
+}
+.row-fluid:before,
+.row-fluid:after {
+  content: " ";
+  /* 1 */
+
+  display: table;
+  /* 2 */
+
+}
+.row-fluid:after {
+  clear: both;
+}
+.examples {
+  font-family: 'weather';
+  font-size: 50px;
+  font-weight: normal;
+  font-style: normal;
+  text-decoration: inherit;
+  text-transform: none;
+  -webkit-font-smoothing: antialiased;
+}
+.weather {
+  margin: 0px auto;
+  font-family: "aktiv-grotesk-std";
+}
+.weather .relative {
+  position: relative;
+}
+.weather .currently {
+  float: left;
+  font-size: 30px;
+  font-weight: 100;
+  margin-top: 5px;
+  opacity: 0.8;
+  filter: alpha(opacity=80);
+}
+.weather .mainTemp {
+  float: left;
+}
+.weather .mainTemp:before,
+.weather .mainTemp:after {
+  content: " ";
+  /* 1 */
+
+  display: table;
+  /* 2 */
+
+}
+.weather .mainTemp:after {
+  clear: both;
+}
+.weather .mainTemp:before,
+.weather .mainTemp:after {
+  content: " ";
+  /* 1 */
+
+  display: table;
+  /* 2 */
+
+}
+.weather .mainTemp:after {
+  clear: both;
+}
+.weather .mainTemp .temp {
+  font-size: 70px;
+  line-height: 1em;
+  font-weight: 200;
+  float: left;
+  margin-right: 5px;
+}
+.weather .mainTemp .highLow {
+  float: left;
+  font-size: 22px;
+  line-height: 1em;
+  margin-top: 5px;
+  font-weight: 200;
+  text-align: center;
+  opacity: 0.5;
+  filter: alpha(opacity=50);
+}
+.weather .mainTemp .highLow:before,
+.weather .mainTemp .highLow:after {
+  content: " ";
+  /* 1 */
+
+  display: table;
+  /* 2 */
+
+}
+.weather .mainTemp .highLow:after {
+  clear: both;
+}
+.weather .mainTemp .highLow:before,
+.weather .mainTemp .highLow:after {
+  content: " ";
+  /* 1 */
+
+  display: table;
+  /* 2 */
+
+}
+.weather .mainTemp .highLow:after {
+  clear: both;
+}
+.weather .mainTemp .highLow .high {
+  margin-top: 10px;
+  margin-bottom: 5px;
+}
+.weather .mainIcon {
+  font-size: 110px;
+  opacity: 0.5;
+  filter: alpha(opacity=50);
+  line-height: .3em;
+  float: right;
+}
+.weather .icon {
+  position: absolute;
+  top: 0px;
+  left: 100px;
+  color: #ffffff;
+  opacity: 0.3;
+  filter: alpha(opacity=30);
+  z-index: 9;
+  font-size: 130px;
+  line-height: 1em;
+  margin-top: -20px;
+  text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.4);
+  text-align: right;
+}
+.weather .tomorrow {
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 1em;
+  margin-top: 20px;
+}
+.weather .tomorrow:before,
+.weather .tomorrow:after {
+  content: " ";
+  /* 1 */
+
+  display: table;
+  /* 2 */
+
+}
+.weather .tomorrow:after {
+  clear: both;
+}
+.weather .tomorrow:before,
+.weather .tomorrow:after {
+  content: " ";
+  /* 1 */
+
+  display: table;
+  /* 2 */
+
+}
+.weather .tomorrow:after {
+  clear: both;
+}
+.weather .tomorrow .day {
+  float: left;
+}
+.weather .tomorrow .day .name {
+  opacity: 0.5;
+  filter: alpha(opacity=50);
+  display: inline-block;
+  margin-right: 10px;
+}
+.weather .tomorrow .day .condition {
+  display: inline-block;
+}
+.weather .tomorrow .temps {
+  float: right;
+}
+.weather .tomorrow .temps:before,
+.weather .tomorrow .temps:after {
+  content: " ";
+  /* 1 */
+
+  display: table;
+  /* 2 */
+
+}
+.weather .tomorrow .temps:after {
+  clear: both;
+}
+.weather .tomorrow .temps:before,
+.weather .tomorrow .temps:after {
+  content: " ";
+  /* 1 */
+
+  display: table;
+  /* 2 */
+
+}
+.weather .tomorrow .temps:after {
+  clear: both;
+}
+.weather .tomorrow .temps .tomorrow-icon {
+  font-size: 40px;
+  margin-right: 5px;
+  opacity: 0.5;
+  filter: alpha(opacity=50);
+}
+.weather .tomorrow .temps .high {
+  display: inline-block;
+  margin-right: 10px;
+}
+.weather .tomorrow .temps .low {
+  display: inline-block;
+  margin-right: 0px;
+  opacity: 0.5;
+  filter: alpha(opacity=50);
+}
+.download-share {
+  padding: 20px 0px 30px 0px;
+  border-top: 1px solid #e6e6e6;
+  border-bottom: 1px solid #e6e6e6;
+  background-color: #f2f2f2;
+  margin-top: 30px;
+  -webkit-box-shadow: inset 0px 0px 15px rgba(0, 0, 0, 0.1);
+  box-shadow: inset 0px 0px 15px rgba(0, 0, 0, 0.1);
+}
